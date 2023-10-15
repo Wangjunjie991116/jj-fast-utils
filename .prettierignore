@@ -1,0 +1,11 @@
+**/*.svg
+package.json
+.DS_Store
+.eslintignore
+*.png
+*.toml
+.editorconfig
+.gitignore
+.prettierignore
+*.lock
+yarn-error.log
