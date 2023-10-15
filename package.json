@@ -1,0 +1,25 @@
+{
+  "name": "jj-utils",
+  "version": "0.0.1",
+  "description": "🚀 FE utils for anyone !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wangjunjie991116/jj-utils.git"
+  },
+  "keywords": [
+    "FE",
+    "Utiles",
+    "Anyone",
+    "Fast"
+  ],
+  "author": "junjie.Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wangjunjie991116/jj-utils/issues"
+  },
+  "homepage": "https://github.com/Wangjunjie991116/jj-utils#readme"
+}
