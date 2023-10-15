@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wangjunjie991116/jj-utils.git"
+    "url": "git+https://github.com/Wangjunjie991116/jj-fast-utils.git"
   },
   "keywords": [
     "FE",
@@ -28,9 +28,9 @@
   "author": "junjie.Wang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Wangjunjie991116/jj-utils/issues"
+    "url": "https://github.com/Wangjunjie991116/jj-fast-utils/issues"
   },
-  "homepage": "https://github.com/Wangjunjie991116/jj-utils#readme",
+  "homepage": "https://github.com/Wangjunjie991116/jj-fast-utils#readme",
   "devDependencies": {
     "prettier": "^3.0.3",
     "tslint": "^6.1.3",

@@ -1,2 +1,2 @@
-# jj-utils
+# jj-fast-utils
 🚀 FE utils for anyone !
