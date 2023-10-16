@@ -1,12 +1,21 @@
 {
-  "compilerOptions": {
-    "outDir": "./lib",
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["esnext"],
-    "strict": true,
-    "declaration": true
-  },
-  "include": ["./src"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "outDir": "./lib",
+        "module": "esnext",
+        "target": "esnext",
+        "lib": ["esnext", "dom"],
+        "moduleResolution": "node",
+        "strict": true,
+        "declaration": true, // 可以在 TypeScript 编译过程中生成声明文件，提供准确的类型信息和代码提示
+        "skipLibCheck": true, // 用于跳过对声明文件（.d.ts 文件）的类型检查
+        "allowJs": true, // 用于允许将 JavaScript 文件纳入 TypeScript 项目中进行编译
+        "noUnusedLocals": true, // 用于在编译过程中检测并报告未使用的局部变量
+        "noImplicitReturns": true, // 用于在编译过程中检测并报告可能的隐式返回问题
+        "forceConsistentCasingInFileNames": true, // 用于强制文件名的大小写一致性
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["src/**/*", "typing/**/*"],
+    "exclude": ["node_modules"]
 }
