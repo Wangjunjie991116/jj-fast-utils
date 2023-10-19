@@ -19,6 +19,3 @@ export { setImgAutoByBox } from './setImgAutoByBox';
 
 // Number 数值
 export { numberToChinese } from './numberToChinese';
-
-// Frequently-func 常用功能
-// export {pollBy}
