@@ -42,10 +42,9 @@
     }
   },
   "lint-staged": {
-    "*./src/**/*.{js,ts,json,css,less,md,scss}": [
+    "*./src/**/*.{js,ts,json,css,less,scss,md,tsx,jsx}": [
       "eslint --fix",
-      "prettier --write",
-      "pnpm lint"
+      "prettier --write"
     ],
     "package.json": "sort-package-json"
   },
