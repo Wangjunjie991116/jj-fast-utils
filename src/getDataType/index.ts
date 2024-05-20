@@ -4,7 +4,9 @@
  * @param data The data type needs to be determined. 需要判断数据类型的数据.
  * @returns string: array | string | number ...
  */
-export const getDataType = (data: any) => {
-    const type = Object.prototype.toString.call(data).split(' ')[1];
-    return type.substring(0, type.length - 1).toLowerCase();
+const getDataType = (data: any) => {
+	const type = Object.prototype.toString.call(data).split(' ')[1];
+	return type.substring(0, type.length - 1).toLowerCase();
 };
+
+export default getDataType;

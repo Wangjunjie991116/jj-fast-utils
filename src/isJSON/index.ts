@@ -4,11 +4,13 @@
  * @param str The judged string
  * @return Result
  */
-export const isJSON = (str: string) => {
-    try {
-        JSON.parse(str);
-        return true;
-    } catch (error) {
-        return false;
-    }
+const isJSON = (str: string) => {
+	try {
+		JSON.parse(str);
+		return true;
+	} catch (error) {
+		return false;
+	}
 };
+
+export default isJSON;

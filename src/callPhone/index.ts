@@ -3,10 +3,12 @@
  *
  * @param phone Phone number. 电话号码.
  */
-export const callPhone = (phone: string) => {
-    const aElement = document.createElement('a');
-    aElement.setAttribute('href', `tel:${phone}`);
-    document.body.appendChild(aElement);
-    aElement.click();
-    document.body.removeChild(aElement);
+const callPhone = (phone: string) => {
+	const aElement = document.createElement('a');
+	aElement.setAttribute('href', `tel:${phone}`);
+	document.body.appendChild(aElement);
+	aElement.click();
+	document.body.removeChild(aElement);
 };
+
+export default callPhone;

@@ -9,33 +9,35 @@
  *  state: string;      页面显隐状态属性名，返回值为 visible | hidden .
  * }
  */
-export const getPageVisibleInfo = () => {
-    let hidden = '';
-    let visibilityChange;
-    let state;
+const getPageVisibleInfo = () => {
+	let hidden = '';
+	let visibilityChange;
+	let state;
 
-    if (typeof document.hidden !== 'undefined') {
-        hidden = 'hidden';
-        visibilityChange = 'visibilitychange';
-        state = 'visibilityState';
-    } else if (typeof (document as any).mozHidden !== 'undefined') {
-        hidden = 'mozHidden';
-        visibilityChange = 'mozvisibilitychange';
-        state = 'mozVisibilityState';
-    } else if (typeof (document as any).msHidden !== 'undefined') {
-        hidden = 'msHidden';
-        visibilityChange = 'msvisibilitychange';
-        state = 'msVisibilityState';
-    } else if (typeof (document as any).webkitHidden !== 'undefined') {
-        hidden = 'webkitHidden';
-        visibilityChange = 'webkitvisibilitychange';
-        state = 'webkitVisibilityState';
-    }
+	if (typeof document.hidden !== 'undefined') {
+		hidden = 'hidden';
+		visibilityChange = 'visibilitychange';
+		state = 'visibilityState';
+	} else if (typeof (document as any).mozHidden !== 'undefined') {
+		hidden = 'mozHidden';
+		visibilityChange = 'mozvisibilitychange';
+		state = 'mozVisibilityState';
+	} else if (typeof (document as any).msHidden !== 'undefined') {
+		hidden = 'msHidden';
+		visibilityChange = 'msvisibilitychange';
+		state = 'msVisibilityState';
+	} else if (typeof (document as any).webkitHidden !== 'undefined') {
+		hidden = 'webkitHidden';
+		visibilityChange = 'webkitvisibilitychange';
+		state = 'webkitVisibilityState';
+	}
 
-    return {
-        isVisible: !(document as any)[hidden],
-        hidden,
-        visibilityChange,
-        state,
-    };
+	return {
+		isVisible: !(document as any)[hidden],
+		hidden,
+		visibilityChange,
+		state,
+	};
 };
+
+export default getPageVisibleInfo;
