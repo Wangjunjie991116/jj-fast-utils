@@ -21,6 +21,13 @@
 		"strict": true,
 		"paths": { "@/*": ["src/*"] }
 	},
-	"include": ["src/**/*", "typing/**/*"],
+	"include": [
+		"src/**/*",
+		"typing/**/*",
+		".eslintrc.js",
+		"commitlint.config.js",
+		"babel.config.js",
+		"rollup.config.js"
+	],
 	"exclude": ["node_modules", "dist"]
 }

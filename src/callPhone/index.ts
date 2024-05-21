@@ -1,7 +1,7 @@
 /**
  * making a call. 拨打电话.
  *
- * @param phone Phone number. 电话号码.
+ * @param {string} phone Phone number. 电话号码.
  */
 const callPhone = (phone: string) => {
 	const aElement = document.createElement('a');

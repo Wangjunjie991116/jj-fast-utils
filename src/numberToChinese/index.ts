@@ -10,7 +10,7 @@
  * 111 =>  一百一十一
  * 19823 => 一万九千八百二十三
  */
-const numberToChinese = (number: number) => {
+const numberToChinese = (number: number): string => {
 	const arr1 = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
 	const arr2 = ['', '十', '百', '千', '万', '十', '百', '千', '亿', '十', '百', '千', '万', '十', '百', '千', '亿'];
 	if (!number || isNaN(number)) return '零';
