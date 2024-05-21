@@ -13,13 +13,12 @@ import typescript from '@rollup/plugin-typescript';
 
 // 引入 package.json
 import pkg from './package.json' assert { type: 'json' };
-
 import alias from '@rollup/plugin-alias';
-
 // 导出 defineConfig 方法可以让编辑器（VSCode）智能提示所有的 rollup 的配置项
 import { defineConfig } from 'rollup';
 
 const pkgName = pkg.name;
+
 export default defineConfig({
 	input: 'src/index.ts',
 	output: [
@@ -38,12 +37,6 @@ export default defineConfig({
 			plugins: [terser()],
 		},
 	],
-	plugins: [
-		json(),
-		resolve(),
-		typescript(),
-		alias({ resolve: ['.js'] }),
-		commonjs(),
-	],
+	plugins: [json(), resolve(), typescript(), alias({ resolve: ['.js'] }), commonjs()],
 	external: [], // 不需要打入包内的第三方npm包,例如['lodash']
 });

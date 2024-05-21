@@ -1,9 +1,17 @@
 module.exports = {
 	parser: '@typescript-eslint/parser',
-	plugins: ['simple-import-sort', 'regexp'],
-	extends: ['airbnb', 'airbnb/hooks', 'prettier', 'eslint:recommended', 'plugin:regexp/recommended'],
+	plugins: ['simple-import-sort', 'regexp', '@typescript-eslint'],
+	extends: [
+		'airbnb',
+		'airbnb/hooks',
+		'prettier',
+		'eslint:recommended',
+		'plugin:regexp/recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+	],
 	parserOptions: { project: ['./tsconfig.json'] },
-	env: { browser: true, node: true, es6: true, mocha: true, jest: true, jasmine: true },
+	env: { browser: true, node: true, es6: true, jest: true },
 	rules: {
 		camelcase: 'off', // 允许定义属性不是驼峰写法
 		'no-console': 'off', // 允许使用console方法
@@ -110,5 +118,36 @@ module.exports = {
 				functions: 'ignore',
 			},
 		],
+		// ts 配置
+		'@typescript-eslint/no-empty-interface': 'off', // 允许定义空类型
+		'@typescript-eslint/no-empty-function': 'off', // 允许定义空函数
+		'@typescript-eslint/no-shadow': 'off', // 允许函数内参数命名同外层作用域有相同定义
+		'@typescript-eslint/camelcase': ['off'], // 允许变量定义不使用驼峰
+		'@typescript-eslint/explicit-function-return-type': ['off'], // 允许函数没有明确的返回类型
+		'@typescript-eslint/no-explicit-any': ['off'], // 允许使用any类型
+		'@typescript-eslint/no-unsafe-return': 'off', // 允许函数返回类型为any
+		'@typescript-eslint/no-unsafe-assignment': 'off', // 允许将任意值赋给未知类型的变量
+		'@typescript-eslint/explicit-module-boundary-types': 'off', // 允许没有显示地返回类型
+		'@typescript-eslint/no-unsafe-member-access': 'off', // 允许访问未知定义对象类型的属性或方法
+		'@typescript-eslint/no-unsafe-call': 'off', // 允许调用any类型的函数和方法
+		'@typescript-eslint/no-floating-promises': 'off', // 允许promise简写，如Promise.reject().catch()，catch中可不写回调
+		'@typescript-eslint/restrict-template-expressions': 'off', // 允许模版字符串有对象
+		'@typescript-eslint/ban-types': 'warn', // 报警内置类型别名
+		'@typescript-eslint/no-unsafe-argument': 'warn', // 函数内不安全类型的参数（any）传递报警
+		'@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }], // 禁止声明没有被使用到的变量
+		'@typescript-eslint/no-misused-promises': [
+			// 禁止错误地使用promise
+			'error',
+			{ checksVoidReturn: false },
+		],
+		'@typescript-eslint/no-use-before-define': ['error'], // 禁止变量提升，必需提前定义
+		'@typescript-eslint/consistent-indexed-object-style': 'error', // 对象索引严格使用点号 || 方括号方法
+		'@typescript-eslint/consistent-type-imports': 'error', // 禁止导入类型风格不一致，比如一个使用import，一个使用import type
+		'@typescript-eslint/no-non-null-assertion': 'error', // 禁止使用非空！运算符来判断null & undefined
+		/**
+		 * eslint规则类冲突 & 关闭规则
+		 */
+		'no-use-before-define': ['off'],
+		'no-control-regex': ['off'],
 	},
 };

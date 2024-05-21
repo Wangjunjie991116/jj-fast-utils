@@ -2,15 +2,14 @@ import addEleClass from './addEleClass';
 import callPhone from './callPhone';
 import getDataType from './getDataType';
 import getPageVisibleInfo from './getPageVisibleInfo';
-
-import isJSON from './isJSON';
-import numberToChinese from './numberToChinese';
-import setImgAutoByBox from './setImgAutoByBox';
 import getQuery from './getQuery';
 import hasClass from './hasClass';
 import isAndroid from './isAndroid';
 import isEmail from './isEmail';
 import isIOS from './isIOS';
+import isJSON from './isJSON';
+import numberToChinese from './numberToChinese';
+import setImgAutoByBox from './setImgAutoByBox';
 
 // // Judge 判断
 // export  isAndroid  from './isAndroid';
@@ -36,16 +35,7 @@ import isIOS from './isIOS';
 // export  numberToChinese  from './numberToChinese';
 
 export {
-	numberToChinese,
-	isAndroid,
-	isIOS,
-	isEmail,
-	isJSON,
-	getDataType,
-	getPageVisibleInfo,
-	getQuery,
-	addEleClass,
-	hasClass,
-	callPhone,
-	setImgAutoByBox,
+	addEleClass, 
+	callPhone, getDataType, getPageVisibleInfo, getQuery, hasClass, isAndroid, isEmail, isIOS, isJSON, numberToChinese, setImgAutoByBox
 };
+
