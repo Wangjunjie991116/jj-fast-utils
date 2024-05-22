@@ -7,10 +7,13 @@ import { parse } from 'qs';
  * @param {string | undefined} url Incoming link text. 传入的链接文本.
  * @return {QueryString.ParsedQs} Parameter object. 参数对象.
  */
-const getQuery = (url?: string): QueryString.ParsedQs => {
-	url = decodeURIComponent(url || window.location.search);
-	if (url.indexOf('?') > -1) url = url.slice(1);
-	return parse(url);
+const getQuery = (url: string | undefined = ''): QueryString.ParsedQs => {
+	let str = url || window.location.search;
+	while (str !== decodeURIComponent(str)) {
+		str = decodeURIComponent(str);
+	}
+
+	return parse(str);
 };
 
 export default getQuery;
