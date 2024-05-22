@@ -9,7 +9,9 @@ import isEmail from './isEmail';
 import isIOS from './isIOS';
 import isJSON from './isJSON';
 import numberToChinese from './numberToChinese';
+import rgb2hex from './rgbToHex';
 import setImgAutoByBox from './setImgAutoByBox';
+import setViewportHeight from './setViewportHeight';
 
 export {
 	addEleClass,
@@ -23,5 +25,7 @@ export {
 	isIOS,
 	isJSON,
 	numberToChinese,
+	rgb2hex,
 	setImgAutoByBox,
+	setViewportHeight,
 };
