@@ -1,4 +1,5 @@
-import QueryString, { parse } from 'qs';
+import type QueryString from 'qs';
+import { parse } from 'qs';
 
 /**
  * Gets the URL parameters into object format. 获取 URL 中的参数转化为对象格式.

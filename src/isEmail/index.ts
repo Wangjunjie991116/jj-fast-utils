@@ -5,7 +5,7 @@
  * @return {boolean} Result. 结果.
  */
 const isEmail = (str: string): boolean => {
-	const emailRegexp = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	const emailRegexp = /^[\w.!#$%&’*+/=?^`{|}~-]+@[a-zA-Z\d-]+(?:\.[a-zA-Z\d-]+)*$/;
 	return emailRegexp.test(str);
 };
 

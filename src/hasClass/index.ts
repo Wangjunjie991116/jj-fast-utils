@@ -6,7 +6,7 @@
  * @return {boolean} Result. 结果.
  */
 const hasClass = (ele: Element, className: string): boolean => {
-	let reg = new RegExp('(^|\\s)' + className + '(\\s|$)');
+	const reg = new RegExp(`(^|\\s)${className}(\\s|$)`);
 	return reg.test(ele.className);
 };
 

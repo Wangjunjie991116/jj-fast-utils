@@ -23,7 +23,8 @@ const numberToChinese = (number: number): string => {
 		result = arr1[Number(arr1_index)] + result;
 	}
 	//  将【零千、零百】换成【零】 【十零】换成【十】
-	result = result.replace(/零(千|百|十)/g, '零').replace(/十零/g, '十');
+	// eslint-disable-next-line regexp/no-unused-capturing-group
+	result = result.replace(/零([千百十])/g, '零').replace(/十零/g, '十');
 	//  合并中间多个零为一个零
 	result = result.replace(/零+/g, '零');
 	//  将【零亿】换成【亿】【零万】换成【万】

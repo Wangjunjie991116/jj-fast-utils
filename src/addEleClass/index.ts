@@ -8,7 +8,7 @@ import hasClass from '@/hasClass';
  */
 const addEleClass = (ele: Element, className: string) => {
 	if (hasClass(ele, className)) return;
-	let curClass = ele.className.split(' ');
+	const curClass = ele.className.split(' ');
 	curClass.push(className);
 	ele.className = curClass.join(' ');
 };
