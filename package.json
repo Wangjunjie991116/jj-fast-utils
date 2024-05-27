@@ -1,6 +1,6 @@
 {
   "name": "jj-fast-utils",
-  "version": "0.0.33",
+  "version": "0.0.35",
   "private": false,
   "description": "🚀 FE utils for anyone !",
   "keywords": [
@@ -27,14 +27,9 @@
   "scripts": {
     "build": "rm -rf dist && cross-env NODE_ENV=production && rollup -c --bundleConfigAsCjs",
     "dev": "rm -rf dist && cross-env NODE_ENV=development && rollup -c --bundleConfigAsCjs",
-    "execute": "npm publish && git push",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "prepare": "husky install",
-    "publish": "npm version patch && pnpm execute",
-    "publish:major": "npm version major && pnpm execute",
-    "publish:minor": "npm version minor && pnpm execute",
-    "publish:patch": "npm version patch && pnpm execute",
     "serve": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
