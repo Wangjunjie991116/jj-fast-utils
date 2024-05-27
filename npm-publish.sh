@@ -7,27 +7,18 @@
 # pnpm publish           # 默认 patch 版本
 if [ -z "$1" ]; then
   npm version patch
-  npm publish
+elif [ "$1" == "major" ]; then
+  npm version major
+elif [ "$1" == "minor" ]; then
+  npm version minor
+elif [ "$1" == "patch" ]; then
+  npm version patch
 else
-  case $1 in
-    major)
-      npm version major
-      npm publish
-      ;;
-    minor)
-      npm version minor
-      npm publish
-      ;;
-    patch)
-      npm version patch
-      npm publish
-      ;;
-    *)
-      echo "Invalid argument. Usage: publish.sh [major|minor|patch]"
-      exit 1
-      ;;
-  esac
+  echo "Invalid argument. Usage: publish.sh [major|minor|patch]"
+  exit 1
 fi
+npm publish
+echo "******************************** 牛啊小老弟儿, npm 包完成发版 ******************************** "
 
 # 推送代码到 github
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
@@ -40,4 +31,4 @@ else
   git push origin $BRANCH
 fi
 
-echo "牛啊小老弟儿，版本发布完成 ~~~"
+echo "******************************** 牛啊小老弟儿, github 完成推送 ******************************** "
