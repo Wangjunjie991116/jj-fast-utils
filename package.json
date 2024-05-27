@@ -1,6 +1,6 @@
 {
   "name": "jj-fast-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "description": "🚀 FE utils for anyone !",
   "keywords": [
@@ -20,9 +20,6 @@
   "license": "MIT",
   "author": "junjie.Wang",
   "type": "commonjs",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "browser": "dist/index.umd.js",
   "types": "src/index.d.ts",
   "files": [
     "dist/**/*"
@@ -33,9 +30,9 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "prepare": "husky install",
+    "publish": "sh npm-publish.sh",
     "serve": "rollup -c -w",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "git push && git push --tags"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
     "hooks": {
@@ -86,6 +83,5 @@
     "tslib": "^2.6.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.2.2"
-  },
-  "minHtml": "dist/index.min.js"
+  }
 }
