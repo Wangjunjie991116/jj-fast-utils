@@ -18,8 +18,9 @@ else
   echo "Invalid argument. Usage: publish.sh [major|minor|patch]"
   exit 1
 fi
-# 获取当前包的版本
-CURRENT_VERSION=$(npm view <package-name> version)
+# 获取包当前版本
+CURRENT_VERSION=$(npm view <jj-fast-utils> version)
+# 获取包当前版本
 echo "Current version: $CURRENT_VERSION"
 # 检查是否已经升级到目标版本
 if [[ $CURRENT_VERSION == *"${VERSION}-"* ]]; then
