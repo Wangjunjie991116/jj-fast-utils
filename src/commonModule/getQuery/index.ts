@@ -8,7 +8,7 @@ import { parse } from 'qs';
  * @return {QueryString.ParsedQs} Parameter object. 参数对象.
  */
 const getQuery = (url: string | undefined = ''): QueryString.ParsedQs => {
-	let str = url || window.location.search;
+	let str = url || window?.location?.search || '';
 	while (str !== decodeURIComponent(str)) {
 		str = decodeURIComponent(str);
 	}

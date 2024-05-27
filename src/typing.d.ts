@@ -1,3 +1,1 @@
-declare interface Window {
-    [key: string]: any;
-}
+type Window = Record<string, any>;

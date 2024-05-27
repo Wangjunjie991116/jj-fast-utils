@@ -1,31 +1,21 @@
-import addEleClass from './addEleClass';
-import callPhone from './callPhone';
-import getDataType from './getDataType';
-import getPageVisibleInfo from './getPageVisibleInfo';
-import getQuery from './getQuery';
-import hasClass from './hasClass';
-import isAndroid from './isAndroid';
-import isEmail from './isEmail';
-import isIOS from './isIOS';
-import isJSON from './isJSON';
-import numberToChinese from './numberToChinese';
-import rgb2hex from './rgbToHex';
-import setImgAutoByBox from './setImgAutoByBox';
-import setViewportHeight from './setViewportHeight';
-
-export {
+import { getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex } from './commonModule';
+import {} from './nodeModule';
+import {
 	addEleClass,
 	callPhone,
-	getDataType,
 	getPageVisibleInfo,
-	getQuery,
 	hasClass,
 	isAndroid,
-	isEmail,
 	isIOS,
-	isJSON,
-	numberToChinese,
-	rgb2hex,
 	setImgAutoByBox,
 	setViewportHeight,
-};
+} from './webModule';
+
+// 方法兼容 Web 和 Node.js 环境
+export { getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex };
+
+// 方法在 Node.js 环境下可用
+export {};
+
+// 方法在 Web 环境下可用
+export { addEleClass, callPhone, getPageVisibleInfo, hasClass, isAndroid, isIOS, setImgAutoByBox, setViewportHeight };

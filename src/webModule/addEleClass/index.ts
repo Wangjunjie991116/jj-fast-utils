@@ -1,4 +1,4 @@
-import hasClass from '@/hasClass';
+import hasClass from '../hasClass';
 
 /**
  * Add a className to the element. 给元素添加类名.
