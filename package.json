@@ -1,13 +1,17 @@
 {
   "name": "jj-fast-utils",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "private": false,
   "description": "🚀 FE utils for anyone !",
   "keywords": [
     "FE",
     "Utiles",
     "Anyone",
-    "Fast"
+    "Fast",
+    "Web",
+    "Node",
+    "Rollup",
+    "Lib"
   ],
   "homepage": "https://github.com/Wangjunjie991116/jj-fast-utils#readme",
   "bugs": {
@@ -20,6 +24,7 @@
   "license": "MIT",
   "author": "junjie.Wang",
   "type": "commonjs",
+  "main": "dist/web.js",
   "types": "src/index.d.ts",
   "files": [
     "dist/**/*"
@@ -82,5 +87,9 @@
     "tslib": "^2.6.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">= 14.20.0",
+    "pnpm": ">= 6.35.1"
   }
 }

@@ -108,7 +108,21 @@ module.exports = {
 		'simple-import-sort/imports': [
 			// 自动排序
 			'error',
-			{ groups: [['^react', '^@?\\w'], ['^'], ['^\\.'], ['^\\u0000']] },
+			{
+				groups: [
+					['^react', '^@?\\w'],
+					['./commonEnv/array'],
+					['./commonEnv/string'],
+					['./commonEnv/type'],
+					['./nodeEnv/process'],
+					['./webEnv/dom'],
+					['./webEnv/type'],
+					['./webEnv/url'],
+					['^'],
+					['^\\.'],
+					['^\\u0000'],
+				],
+			},
 		],
 
 		/** import-js */
