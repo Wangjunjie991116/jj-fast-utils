@@ -1,4 +1,4 @@
-import { getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex } from './commonModule';
+import { generateNumberStr, getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex } from './commonModule';
 import {} from './nodeModule';
 import {
 	addEleClass,
@@ -12,7 +12,7 @@ import {
 } from './webModule';
 
 // 方法兼容 Web 和 Node.js 环境
-export { getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex };
+export { generateNumberStr, getDataType, getQuery, isEmail, isJSON, numberToChinese, rgb2hex };
 
 // 方法在 Node.js 环境下可用
 export {};
