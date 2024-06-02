@@ -12,6 +12,8 @@ import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 // 导出 defineConfig 方法可以让编辑器（VSCode）智能提示所有的 rollup 的配置项
 import { defineConfig } from 'rollup';
+// 产物体积分析插件
+import filesize from 'rollup-plugin-filesize';
 
 // 引入 package.json
 import pkg from './package.json' assert { type: 'json' };
@@ -19,7 +21,15 @@ import pkg from './package.json' assert { type: 'json' };
 // 通用 output 配置
 const commonOutputCig = { name: pkg.name, sourcemap: true, globals: { qs: 'qs' } };
 // 通用 plugins 配置
-const commonPluginsCig = [resolve(), commonjs(), typescript(), json(), alias({ resolve: ['.js'] }), terser()];
+const commonPluginsCig = [
+	resolve(),
+	commonjs(),
+	typescript(),
+	json(),
+	alias({ resolve: ['.js'] }),
+	terser(),
+	filesize(),
+];
 
 export default defineConfig([
 	{
