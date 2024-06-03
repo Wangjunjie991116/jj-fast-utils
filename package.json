@@ -31,7 +31,9 @@
   ],
   "scripts": {
     "build": "rm -rf dist && cross-env NODE_ENV=production && rollup -c --bundleConfigAsCjs",
+    "build:win": "cross-env NODE_ENV=production && rollup -c --bundleConfigAsCjs",
     "dev": "rm -rf dist && cross-env NODE_ENV=development && rollup -c --bundleConfigAsCjs",
+    "dev:win": "cross-env NODE_ENV=development && rollup -c --bundleConfigAsCjs",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "prepare": "husky install",
