@@ -8,6 +8,7 @@ import rgbTohex from './commonEnv/string/rgbTohex';
 
 // type
 import getDataType from './commonEnv/type/getDataType';
+import isChinaIdCard from './commonEnv/type/isChinaIdCard';
 import isCode from './commonEnv/type/isCode';
 import isEmail from './commonEnv/type/isEmail';
 import isEmpty from './commonEnv/type/isEmpty';
@@ -20,6 +21,6 @@ import isJSON from './commonEnv/type/isJSON';
 // import runCmd from './nodeEnv/process/runCmd';
 
 // 导出 CommonEnv 下的方法
-export { generateNumberStr, getDataType, isCode, isEmail, isEmpty, isJSON, numberToChinese, rgbTohex };
+export { generateNumberStr, getDataType, isCode, isEmail, isEmpty, isJSON, numberToChinese, rgbTohex, isChinaIdCard };
 // 导出 NodeEnv 下的方法
 // export { runCmd };
