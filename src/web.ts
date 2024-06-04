@@ -13,6 +13,7 @@ import isCode from './commonEnv/type/isCode';
 import isEmail from './commonEnv/type/isEmail';
 import isEmpty from './commonEnv/type/isEmpty';
 import isJSON from './commonEnv/type/isJSON';
+import isTel from './commonEnv/type/isTel';
 
 /* ************************************************************************************* */
 /* ************************************   WebEnv   ************************************* */
@@ -31,7 +32,18 @@ import isIOS from './webEnv/type/isIOS';
 import isWeb from './webEnv/type/isWeb';
 
 // 导出 CommonEnv 下的方法
-export { generateNumberStr, getDataType, isCode, isEmail, isEmpty, isJSON, numberToChinese, rgbTohex, isChinaIdCard };
+export {
+	generateNumberStr,
+	getDataType,
+	isCode,
+	isEmail,
+	isEmpty,
+	isJSON,
+	numberToChinese,
+	rgbTohex,
+	isTel,
+	isChinaIdCard,
+};
 // 导出 WebEnv 下的方法
 export {
 	addEleClass,

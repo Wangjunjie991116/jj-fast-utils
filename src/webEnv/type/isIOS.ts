@@ -3,6 +3,6 @@
  *
  * @return {boolean} Result. 结果.
  */
-const isIOS = (): boolean => /ios|iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+const isIOS = (): boolean => /ios|iphone|ipad|ipod|macintosh/.test(navigator.userAgent.toLowerCase());
 
 export default isIOS;
