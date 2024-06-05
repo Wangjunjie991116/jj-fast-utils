@@ -23,6 +23,7 @@ import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
+import scrollToTop from './webEnv/dom/scrollToTop';
 import setImgAutoByBox from './webEnv/dom/setImgAutoByBox';
 import setViewportHeight from './webEnv/dom/setViewportHeight';
 
@@ -53,6 +54,7 @@ export {
 	isAndroid,
 	isIOS,
 	isWeb,
+	scrollToTop,
 	setImgAutoByBox,
 	setViewportHeight,
 };
