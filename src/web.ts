@@ -21,6 +21,7 @@ import isTel from './commonEnv/type/isTel';
 // dom
 import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
+import exitFullscreen from './webEnv/dom/exitFullScreen';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
 import toFullScreen from './webEnv/dom/openFullScreen';
@@ -52,6 +53,7 @@ export {
 export {
 	addEleClass,
 	callPhone,
+	exitFullscreen,
 	getPageVisibleInfo,
 	hasClass,
 	isAndroid,
