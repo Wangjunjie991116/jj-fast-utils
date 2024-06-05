@@ -36,6 +36,10 @@ import isAndroid from './webEnv/type/isAndroid';
 import isIOS from './webEnv/type/isIOS';
 import isWeb from './webEnv/type/isWeb';
 
+// url
+import deleteQuery from './webEnv/url/deleteQuery';
+import getQuery from './webEnv/url/getQuery';
+
 // 导出 CommonEnv 下的方法
 export {
 	convertRgbToHex,
@@ -53,8 +57,10 @@ export {
 export {
 	addEleClass,
 	callPhone,
+	deleteQuery,
 	exitFullscreen,
 	getPageVisibleInfo,
+	getQuery,
 	hasClass,
 	isAndroid,
 	isIOS,
