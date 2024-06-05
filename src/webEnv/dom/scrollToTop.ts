@@ -1,5 +1,5 @@
 /**
- * Page scroll bar back to top. 页面滚动条回到顶部.
+ * The page scroll bar back to top. 页面滚动条回到顶部.
  */
 const scrollToTop = () => {
 	const height = document.documentElement.scrollTop || document.body.scrollTop;
