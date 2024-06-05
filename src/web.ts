@@ -23,6 +23,7 @@ import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
+import scrollToBottom from './webEnv/dom/scrollToBottom';
 import scrollToEle from './webEnv/dom/scrollToEle';
 import scrollToTop from './webEnv/dom/scrollToTop';
 import setImgAutoByBox from './webEnv/dom/setImgAutoByBox';
@@ -45,7 +46,6 @@ export {
 	isJSON,
 	isTel,
 	numberToChinese,
-	scrollToEle,
 };
 // 导出 WebEnv 下的方法
 export {
@@ -56,6 +56,8 @@ export {
 	isAndroid,
 	isIOS,
 	isWeb,
+	scrollToBottom,
+	scrollToEle,
 	scrollToTop,
 	setImgAutoByBox,
 	setViewportHeight,
