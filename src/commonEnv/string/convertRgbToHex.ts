@@ -9,7 +9,7 @@
  * rgb(210,43,2525) => { hex: '#d22bff', alpha: 1 }
  * rgba(12,173,22,.67) => { hex: '#d22bff', alpha: 0.67 }
  */
-const rgbTohex = (color: string): object => {
+const convertRgbToHex = (color: string): object => {
 	if (typeof color !== 'string') {
 		throw new Error('color has to be type of `string`');
 	} else if (color.substr(0, 1) === '#') {
@@ -39,4 +39,4 @@ const rgbTohex = (color: string): object => {
 	return { hex: `#${rgb.toString(16)}`, alpha };
 };
 
-export default rgbTohex;
+export default convertRgbToHex;
