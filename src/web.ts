@@ -23,6 +23,7 @@ import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
+import toFullScreen from './webEnv/dom/openFullScreen';
 import scrollToBottom from './webEnv/dom/scrollToBottom';
 import scrollToEle from './webEnv/dom/scrollToEle';
 import scrollToTop from './webEnv/dom/scrollToTop';
@@ -61,4 +62,5 @@ export {
 	scrollToTop,
 	setImgAutoByBox,
 	setViewportHeight,
+	toFullScreen,
 };
