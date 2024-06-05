@@ -168,6 +168,7 @@ module.exports = {
 		'@typescript-eslint/consistent-indexed-object-style': 'error', // 对象索引严格使用点号 || 方括号方法
 		'@typescript-eslint/consistent-type-imports': 'error', // 禁止导入类型风格不一致，比如一个使用 import，一个使用 import type
 		'@typescript-eslint/no-non-null-assertion': 'error', // 禁止使用非空！运算符来判断 null & undefined
+		'@typescript-eslint/ban-ts-comment': 'off', // 允许禁用检查（需注意）
 
 		/** eslint 规则类冲突 & 关闭规则 */
 		'no-use-before-define': ['off'],

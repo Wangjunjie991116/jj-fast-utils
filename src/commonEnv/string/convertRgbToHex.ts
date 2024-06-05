@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 /**
  * Converts rgba color to HEX. Rgba 格式的颜色转换为十六进制颜色
  *

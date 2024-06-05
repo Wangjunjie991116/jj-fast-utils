@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 /**
  * The page exits the full-screen mode. 页面退出全屏模式.
  */
