@@ -1,8 +1,8 @@
 /**
  * Converts rgba color to HEX. Rgba 格式的颜色转换为十六进制颜色
  *
- * @param  {String} color  rgb or rgba color
- * @return {Object} object with hex and alpha value
+ * @param {String} color  rgb or rgba color. rgb 或 rgba 颜色值.
+ * @return {Object} object with hex and alpha value. 返回对象, 包含 hex 和 alpha 两个属性.
  * @example
  *
  * rgb(210,43,2525) => { hex: '#d22bff', alpha: 1 }
