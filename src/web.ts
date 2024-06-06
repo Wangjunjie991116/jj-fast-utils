@@ -21,6 +21,7 @@ import isTel from './commonEnv/type/isTel';
 // dom
 import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
+import copyTextToClipboard from './webEnv/dom/copyTextToClipboard';
 import exitFullscreen from './webEnv/dom/exitFullScreen';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
@@ -57,6 +58,7 @@ export {
 export {
 	addEleClass,
 	callPhone,
+	copyTextToClipboard,
 	deleteQuery,
 	exitFullscreen,
 	getPageVisibleInfo,
