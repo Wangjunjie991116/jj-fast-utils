@@ -25,6 +25,7 @@ import copyTextToClipboard from './webEnv/dom/copyTextToClipboard';
 import exitFullscreen from './webEnv/dom/exitFullScreen';
 import getPageVisibleInfo from './webEnv/dom/getPageVisibleInfo';
 import hasClass from './webEnv/dom/hasClass';
+import imgLoadAll from './webEnv/dom/imgLoadAll';
 import toFullScreen from './webEnv/dom/openFullScreen';
 import scrollToBottom from './webEnv/dom/scrollToBottom';
 import scrollToEle from './webEnv/dom/scrollToEle';
@@ -64,6 +65,7 @@ export {
 	getPageVisibleInfo,
 	getQuery,
 	hasClass,
+	imgLoadAll,
 	isAndroid,
 	isIOS,
 	isWeb,
