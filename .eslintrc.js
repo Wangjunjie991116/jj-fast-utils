@@ -116,6 +116,7 @@ module.exports = {
 					['./commonEnv/type'],
 					['./nodeEnv/process'],
 					['./webEnv/dom'],
+					['./webEnv/format'],
 					['./webEnv/type'],
 					['./webEnv/url'],
 					['^'],

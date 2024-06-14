@@ -2,7 +2,6 @@
 /* ***********************************   CommonEnv   *********************************** */
 /* ************************************************************************************* */
 // string
-import convertRgbToHex from './commonEnv/string/convertRgbToHex';
 import generateNumberStr from './commonEnv/string/generateNumberStr';
 import numberToChinese from './commonEnv/string/numberToChinese';
 
@@ -33,6 +32,10 @@ import scrollToTop from './webEnv/dom/scrollToTop';
 import setImgAutoByBox from './webEnv/dom/setImgAutoByBox';
 import setViewportHeight from './webEnv/dom/setViewportHeight';
 
+// format
+import convertHexToRgb from './webEnv/format/convertHexToRgb';
+import convertRgbToHex from './webEnv/format/convertRgbToHex';
+
 // type
 import isAndroid from './webEnv/type/isAndroid';
 import isIOS from './webEnv/type/isIOS';
@@ -43,22 +46,13 @@ import deleteQuery from './webEnv/url/deleteQuery';
 import getQuery from './webEnv/url/getQuery';
 
 // 导出 CommonEnv 下的方法
-export {
-	convertRgbToHex,
-	generateNumberStr,
-	getDataType,
-	isChinaIdCard,
-	isCode,
-	isEmail,
-	isEmpty,
-	isJSON,
-	isTel,
-	numberToChinese,
-};
+export { generateNumberStr, getDataType, isChinaIdCard, isCode, isEmail, isEmpty, isJSON, isTel, numberToChinese };
 // 导出 WebEnv 下的方法
 export {
 	addEleClass,
 	callPhone,
+	convertHexToRgb,
+	convertRgbToHex,
 	copyTextToClipboard,
 	deleteQuery,
 	exitFullscreen,

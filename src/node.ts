@@ -2,7 +2,6 @@
 /* ***********************************   CommonEnv   *********************************** */
 /* ************************************************************************************* */
 // string
-import convertRgbToHex from './commonEnv/string/convertRgbToHex';
 import generateNumberStr from './commonEnv/string/generateNumberStr';
 import numberToChinese from './commonEnv/string/numberToChinese';
 
@@ -22,17 +21,6 @@ import isTel from './commonEnv/type/isTel';
 // import runCmd from './nodeEnv/process/runCmd';
 
 // 导出 CommonEnv 下的方法
-export {
-	convertRgbToHex,
-	generateNumberStr,
-	getDataType,
-	isChinaIdCard,
-	isCode,
-	isEmail,
-	isEmpty,
-	isJSON,
-	isTel,
-	numberToChinese,
-};
+export { generateNumberStr, getDataType, isChinaIdCard, isCode, isEmail, isEmpty, isJSON, isTel, numberToChinese };
 // 导出 NodeEnv 下的方法
 // export { runCmd };
