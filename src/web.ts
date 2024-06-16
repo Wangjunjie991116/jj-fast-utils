@@ -42,6 +42,7 @@ import isIOS from './webEnv/type/isIOS';
 import isWeb from './webEnv/type/isWeb';
 
 // url
+import appendQuery from './webEnv/url/appendQuery';
 import deleteQuery from './webEnv/url/deleteQuery';
 import getQuery from './webEnv/url/getQuery';
 
@@ -50,6 +51,7 @@ export { generateNumberStr, getDataType, isChinaIdCard, isCode, isEmail, isEmpty
 // 导出 WebEnv 下的方法
 export {
 	addEleClass,
+	appendQuery,
 	callPhone,
 	convertHexToRgb,
 	convertRgbToHex,
