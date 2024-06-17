@@ -1,11 +1,11 @@
 /* ************************************************************************************* */
 /* ***********************************   CommonEnv   *********************************** */
 /* ************************************************************************************* */
-// string
+// String
 import generateNumberStr from './commonEnv/string/generateNumberStr';
 import numberToChinese from './commonEnv/string/numberToChinese';
 
-// type
+// Type
 import getDataType from './commonEnv/type/getDataType';
 import isChinaIdCard from './commonEnv/type/isChinaIdCard';
 import isCode from './commonEnv/type/isCode';
@@ -17,7 +17,7 @@ import isTel from './commonEnv/type/isTel';
 /* ************************************************************************************* */
 /* ***********************************   NodeEnv   ************************************* */
 /* ************************************************************************************* */
-// process
+// Process
 // import runCmd from './nodeEnv/process/runCmd';
 
 // 导出 CommonEnv 下的方法

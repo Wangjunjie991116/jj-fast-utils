@@ -1,11 +1,11 @@
 /* ************************************************************************************* */
 /* ***********************************   CommonEnv   *********************************** */
 /* ************************************************************************************* */
-// string
+// String
 import generateNumberStr from './commonEnv/string/generateNumberStr';
 import numberToChinese from './commonEnv/string/numberToChinese';
 
-// type
+// Type
 import getDataType from './commonEnv/type/getDataType';
 import isChinaIdCard from './commonEnv/type/isChinaIdCard';
 import isCode from './commonEnv/type/isCode';
@@ -17,7 +17,7 @@ import isTel from './commonEnv/type/isTel';
 /* ************************************************************************************* */
 /* ************************************   WebEnv   ************************************* */
 /* ************************************************************************************* */
-// dom
+// Dom
 import addEleClass from './webEnv/dom/addEleClass';
 import callPhone from './webEnv/dom/callPhone';
 import copyTextToClipboard from './webEnv/dom/copyTextToClipboard';
@@ -32,16 +32,16 @@ import scrollToTop from './webEnv/dom/scrollToTop';
 import setImgAutoByBox from './webEnv/dom/setImgAutoByBox';
 import setViewportHeight from './webEnv/dom/setViewportHeight';
 
-// format
+// Format
 import convertHexToRgb from './webEnv/format/convertHexToRgb';
 import convertRgbToHex from './webEnv/format/convertRgbToHex';
 
-// type
+// Type
 import isAndroid from './webEnv/type/isAndroid';
 import isIOS from './webEnv/type/isIOS';
 import isWeb from './webEnv/type/isWeb';
 
-// url
+// Url
 import appendQuery from './webEnv/url/appendQuery';
 import deleteQuery from './webEnv/url/deleteQuery';
 import getQuery from './webEnv/url/getQuery';
